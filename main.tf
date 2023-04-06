@@ -27,6 +27,8 @@ resource "aws_subnet" "hashicat" {
 
   tags = {
     name = "${var.prefix}-subnet"
+    Department  = "SE"
+    Billable = "YES"
   }
 }
 
@@ -128,6 +130,8 @@ resource "aws_instance" "hashicat" {
 
   tags = {
     Name = "${var.prefix}-hashicat-instance"
+    Department  = "SE"
+    Billable = "YES"
   }
 }
 

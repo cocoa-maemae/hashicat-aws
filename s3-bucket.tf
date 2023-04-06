@@ -9,8 +9,4 @@ module "s3_bucket" {
     enabled = true
   }
 
-  tags = {
-    Department  = "SE"
-    Billable = "YES"
-  }
 }
