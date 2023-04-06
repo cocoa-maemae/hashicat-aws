@@ -4,7 +4,7 @@ module "s3_bucket" {
   version = "2.8.0"
   bucket = "my-s3-bucket"
   acl    = "private"
-
+  bucket_prefix = "on-boarding bucket"
   versioning = {
     enabled = true
   }
