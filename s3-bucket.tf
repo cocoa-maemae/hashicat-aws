@@ -8,4 +8,9 @@ module "s3_bucket" {
   versioning = {
     enabled = true
   }
+
+  tags = {
+    Department  = "SE"
+    Billable = "YES"
+  }
 }
